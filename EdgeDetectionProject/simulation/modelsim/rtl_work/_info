@@ -1,0 +1,299 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/simulation/modelsim
+vbuf_gauss_to_sobel
+Z1 !s110 1585506505
+!i10b 1
+!s100 `Dnbb8K8BHX05k_`YL7Z30
+Ic8X<LDWHooAl?oNDJP9762
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1585141368
+8E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buffer_gauss_to_sobel.v
+FE:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buffer_gauss_to_sobel.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1585506505.000000
+!s107 E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buffer_gauss_to_sobel.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject|E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buffer_gauss_to_sobel.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject
+Z7 tCvgOpt 0
+vbuf_sobel_to_threshold
+R1
+!i10b 1
+!s100 OV?k:e2V6_7ZaLe6322lD3
+I0Y<4_]Lkkl@m:h7Y_>7OW3
+R2
+R0
+w1585159741
+8E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buffer_sobel_to_nonmaxsupression.v
+FE:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buffer_sobel_to_nonmaxsupression.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buffer_sobel_to_nonmaxsupression.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject|E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buffer_sobel_to_nonmaxsupression.v|
+!i113 1
+R5
+R6
+R7
+vbuf_to_gauss
+Z8 !s110 1585506506
+!i10b 1
+!s100 LCkeYXO_[CGoghTnNF5T50
+IKVRR1^]N5GJ1JJZde^]W[3
+R2
+R0
+w1585085490
+8E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v
+FE:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z9 !s108 1585506506.000000
+!s107 E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject|E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v|
+!i113 1
+R5
+R6
+R7
+vedge_detection
+R1
+!i10b 1
+!s100 Ne4J1KAOY`ffdMdgPA]k<0
+IeY4dJKf?=@WDm=fd:bVCY2
+R2
+R0
+w1585072585
+8E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/edge_detection.v
+FE:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/edge_detection.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/edge_detection.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject|E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/edge_detection.v|
+!i113 1
+R5
+R6
+R7
+vfifo_memory502
+R8
+!i10b 1
+!s100 ig6zKR:m@4Hmk<@_f;4Uz0
+IDMo[o9nMoRXBh;^Z34=Pa1
+R2
+R0
+w1583914711
+8E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/fifo_memory502.v
+FE:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/fifo_memory502.v
+Z10 L0 39
+R3
+r1
+!s85 0
+31
+R9
+!s107 E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/fifo_memory502.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject|E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/fifo_memory502.v|
+!i113 1
+R5
+R6
+R7
+vfifo_memory504
+R8
+!i10b 1
+!s100 1K583]>gfhCU4c?9ciMFQ1
+Io^E0?iKV]Sd<Eg>3zCGW^1
+R2
+R0
+w1585140977
+8E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/fifo_memory504.v
+FE:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/fifo_memory504.v
+R10
+R3
+r1
+!s85 0
+31
+R9
+!s107 E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/fifo_memory504.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject|E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/fifo_memory504.v|
+!i113 1
+R5
+R6
+R7
+vfifo_memory506
+R8
+!i10b 1
+!s100 5DU:R1]_oXYINI9CUNbE^2
+I`K]P<]U9k`]a;Cd5gcLRD1
+R2
+R0
+w1585084113
+8E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/fifo_memory506.v
+FE:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/fifo_memory506.v
+R10
+R3
+r1
+!s85 0
+31
+R9
+!s107 E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/fifo_memory506.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject|E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/fifo_memory506.v|
+!i113 1
+R5
+R6
+R7
+vgauss_filter
+DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+R8
+!i10b 1
+!s100 So8H[]jZOZ9?EQ1WDPXQd3
+Iohc?;k7H=`F810[N`5c2H0
+R2
+!s105 gauss_filter_sv_unit
+S1
+R0
+w1585125579
+8E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/gauss_filter.sv
+FE:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/gauss_filter.sv
+L0 3
+R3
+r1
+!s85 0
+31
+R9
+!s107 E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/gauss_filter.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject|E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/gauss_filter.sv|
+!i113 1
+o-sv -work work
+!s92 -sv -work work +incdir+E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject
+R7
+vn_max_suppression
+R8
+!i10b 1
+!s100 2TRMUMV7d[6;k=lA;Az8g1
+IlDe^b=D<C<5dYUe33C>W83
+R2
+R0
+w1585165011
+8E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/non_max_suppression.v
+FE:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/non_max_suppression.v
+L0 3
+R3
+r1
+!s85 0
+31
+R9
+!s107 E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/non_max_suppression.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject|E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/non_max_suppression.v|
+!i113 1
+R5
+R6
+R7
+vrgb_to_grayscale
+R8
+!i10b 1
+!s100 Te;3R@U8alFITMIa_>@3M2
+IIoI883TUkc6m_d2o`KPHm1
+R2
+R0
+w1585086450
+8E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/rgb_to_grayscale.v
+FE:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/rgb_to_grayscale.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/rgb_to_grayscale.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject|E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/rgb_to_grayscale.v|
+!i113 1
+R5
+R6
+R7
+vsobel_operator
+R8
+!i10b 1
+!s100 E:AXLn[XIX3nlW34_7OLc1
+I7A[5Kzaf?;PQ8IUSKUJjS2
+R2
+R0
+w1585164292
+8E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/sobel_operator.v
+FE:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/sobel_operator.v
+L0 3
+R3
+r1
+!s85 0
+31
+R9
+!s107 E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/sobel_operator.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject|E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/sobel_operator.v|
+!i113 1
+R5
+R6
+R7
+vtb_buffer_and_gauss2
+R8
+!i10b 1
+!s100 Xm;>oi8fe4;3iAJ2Pedk_1
+IR40W[e1z_EQ]RKjRUFjI;3
+R2
+R0
+w1585506471
+8E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/tb_buffer_and_gauss2.v
+FE:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/tb_buffer_and_gauss2.v
+L0 2
+R3
+r1
+!s85 0
+31
+R9
+!s107 E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/tb_buffer_and_gauss2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject|E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/tb_buffer_and_gauss2.v|
+!i113 1
+R5
+R6
+R7
+vthreshold
+R8
+!i10b 1
+!s100 H3<XIb]]eQ<2@`Mfln_G92
+I=OO:b0gmMlUOZShH;8l3@0
+R2
+R0
+w1585060545
+8E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/thresholding.v
+FE:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/thresholding.v
+L0 7
+R3
+r1
+!s85 0
+31
+R9
+!s107 E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/thresholding.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject|E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/thresholding.v|
+!i113 1
+R5
+R6
+R7

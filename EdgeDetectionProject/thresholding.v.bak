@@ -1,0 +1,22 @@
+module threshold(
+	input[7:0] input_pixel,
+	output [1:0] output_pixel
+);
+
+	parameter MIN_THRESHOLD = 20;
+	parameter MAX_THRESHOLD = 120;
+
+	reg [1:0] temp_output;
+	
+	always@(input_pixel) begin
+		if(input_pixel < 20)
+			temp_output = 2'b0;
+		elseif(input_pixel >= 20 && input_pixel < 120)
+			temp_output = 2'b01;
+		else
+			temp_output = 2'b10;
+	end	
+
+assign output_pixel = temp_output;
+	
+endmodule

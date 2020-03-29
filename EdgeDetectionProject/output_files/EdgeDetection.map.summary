@@ -1,0 +1,18 @@
+Analysis & Synthesis Status : Successful - Sun Mar 29 20:52:55 2020
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : EdgeDetection
+Top-level Entity Name : edge_detection
+Family : Cyclone IV GX
+Total logic elements : 2,412
+    Total combinational functions : 2,060
+    Dedicated logic registers : 814
+Total registers : 814
+Total pins : 29
+Total virtual pins : 0
+Total memory bits : 36,864
+Embedded Multiplier 9-bit elements : 0
+Total GXB Receiver Channel PCS : 0
+Total GXB Receiver Channel PMA : 0
+Total GXB Transmitter Channel PCS : 0
+Total GXB Transmitter Channel PMA : 0
+Total PLLs : 0

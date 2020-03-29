@@ -1,0 +1,141 @@
+`timescale 1 ps / 1 ps
+module tb_gauss_and_sobel
+#(
+	parameter INFILE = "E:/intelFPGA_lite/18.1/Projects/Test_Image_Backloop/lenaim82.hex",
+	parameter OUTFILE = "E:/intelFPGA_lite/18.1/Projects/Test_Image_Backloop/out.hex",
+
+	parameter integer WIDTH = 512
+	);
+	parameter sizeOfWidth = 8;
+	parameter sizeOfLengthReal = 262144;
+	integer j = 0;
+	integer k = 0;
+	integer fd = 0;
+	integer licznik = 0;
+	integer global = 0;
+	reg write = 1'b0;
+	wire ready;
+	reg clk = 1'b0;
+	reg [7:0] total_memory [0:sizeOfLengthReal-1];
+	
+	reg [7:0] datain0;
+	reg [7:0] datain1;
+	reg [7:0] datain2;
+	reg [7:0] datain3;
+	reg [7:0] datain4;
+	reg [7:0] datain5;
+	reg [7:0] datain6;
+	reg [7:0] datain7;
+	reg [7:0] datain8;
+	reg [7:0] datain9;
+	reg [7:0] datain10;
+	reg [7:0] datain11;
+	reg [7:0] datain12;
+	reg [7:0] datain13;
+	reg [7:0] datain14;
+	reg [7:0] datain15;
+	reg [7:0] datain16;
+	reg [7:0] datain17;
+	reg [7:0] datain18;
+	reg [7:0] datain19;
+	reg [7:0] datain20;
+	reg [7:0] datain21;
+	reg [7:0] datain22;
+	reg [7:0] datain23;
+	reg [7:0] datain24;
+	
+	wire[7:0] out_pixel;
+
+	edge_detect detect(	
+		clk,
+		write,
+		datain0,
+		datain1,
+		datain2,
+		datain3,
+		datain4,
+		datain5,
+		datain6,
+		datain7,
+		datain8,
+		datain9,
+		datain10,
+		datain11,
+		datain12,
+		datain13,
+		datain14,
+		datain15,
+		datain16,
+		datain17,
+		datain18,
+		datain19,
+		datain20,
+		datain21,
+		datain22,
+		datain23,
+		datain24,
+		ready,
+		out_pixel);
+		
+	initial begin
+		$readmemh(INFILE,total_memory,0,sizeOfLengthReal-1);
+		forever
+			#1 clk = ~clk;
+	end
+	
+	always@(posedge clk)begin
+	global <= global+1;
+		if(j < 508) begin
+			if(k < 508)begin
+					datain0 <= total_memory[j*WIDTH+k];
+					datain1 <= total_memory[j*WIDTH+k+1];
+					datain2 <= total_memory[j*WIDTH+k+2];
+					datain3 <= total_memory[j*WIDTH+k+3];
+					datain4 <= total_memory[j*WIDTH+k+4];
+					datain5 <= total_memory[j*WIDTH+k+WIDTH];
+					datain6 <= total_memory[j*WIDTH+k+WIDTH+1];
+					datain7 <= total_memory[j*WIDTH+k+WIDTH+2];
+					datain8 <= total_memory[j*WIDTH+k+WIDTH+3];
+					datain9 <= total_memory[j*WIDTH+k+WIDTH+4];
+					datain10 <= total_memory[j*WIDTH+k+WIDTH*2];
+					datain11 <= total_memory[j*WIDTH+k+WIDTH*2+1];
+					datain12 <= total_memory[j*WIDTH+k+WIDTH*2+2];
+					datain13 <= total_memory[j*WIDTH+k+WIDTH*2+3];
+					datain14 <= total_memory[j*WIDTH+k+WIDTH*2+4];
+					datain15 <= total_memory[j*WIDTH+k+WIDTH*3];
+					datain16 <= total_memory[j*WIDTH+k+WIDTH*3+1];
+					datain17 <= total_memory[j*WIDTH+k+WIDTH*3+2];
+					datain18 <= total_memory[j*WIDTH+k+WIDTH*3+3];
+					datain19 <= total_memory[j*WIDTH+k+WIDTH*3+4];
+					datain20 <= total_memory[j*WIDTH+k+WIDTH*4];
+					datain21 <= total_memory[j*WIDTH+k+WIDTH*4+1];
+					datain22 <= total_memory[j*WIDTH+k+WIDTH*4+2];
+					datain23 <= total_memory[j*WIDTH+k+WIDTH*4+3];
+					datain24 <= total_memory[j*WIDTH+k+WIDTH*4+4];
+					write = 1'b1;
+			end
+		end
+		else
+			write = 1'b0;
+			
+		if(k == 507)begin
+			k = 0;
+			j=j+1;
+		end else
+			k = k+1;
+	end
+	
+	initial begin
+		fd = $fopen(OUTFILE, "w");
+	end
+	
+	always@(posedge clk) begin
+		if(ready == 1'b1) begin
+			$fwrite(fd, "%H\n", out_pixel);
+			licznik = licznik+1;
+		end
+		if(licznik == 254016)
+			$fclose(fd);
+	end
+	
+endmodule

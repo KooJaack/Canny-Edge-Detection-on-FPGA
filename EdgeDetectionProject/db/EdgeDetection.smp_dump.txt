@@ -1,0 +1,11 @@
+
+State Machine - |edge_detection|hysteresis:hyster|state
+Name state.ST_RESET state.ST_READ state.ST_READY_TO_READ state.ST_HYSTER_RL state.ST_BUFFER_CLEAR state.ST_HYSTER_LR state.ST_IDLE state.ST_SAVE_IMAGE 
+state.ST_IDLE 0 0 0 0 0 0 0 0 
+state.ST_HYSTER_LR 0 0 0 0 0 1 1 0 
+state.ST_BUFFER_CLEAR 0 0 0 0 1 0 1 0 
+state.ST_HYSTER_RL 0 0 0 1 0 0 1 0 
+state.ST_READY_TO_READ 0 0 1 0 0 0 1 0 
+state.ST_READ 0 1 0 0 0 0 1 0 
+state.ST_RESET 1 0 0 0 0 0 1 0 
+state.ST_SAVE_IMAGE 0 0 0 0 0 0 1 1 

@@ -1,0 +1,42 @@
+module n_max_suppression(
+	input [7:0] input_pixel0,
+	input [7:0] input_pixel1,
+	input [7:0] input_pixel2,
+	input [7:0] input_pixel3,
+	input [7:0] input_pixel4,
+	input [7:0] input_pixel5,
+	input [7:0] input_pixel6,
+	input [7:0] input_pixel7,
+	input [7:0] input_pixel8,
+	input [1:0] angle,
+	output [7:0] output_pixel);
+
+	reg[7:0] temp_result;
+	reg is_max;
+	
+	assign output_pixel = temp_result;
+	
+	always@(*) begin
+		is_max = 0;
+		
+		case(angle)
+			2'b00: if((input_pixel4 >= input_pixel3) && (input_pixel4 >= input_pixel5))
+						is_max = 1;
+					
+			2'b01: if((input_pixel4 >= input_pixel2) && (input_pixel4 >= input_pixel6))
+						is_max = 1;
+					
+			2'b10: if((input_pixel4 >= input_pixel1) && (input_pixel4 >= input_pixel7))
+						is_max = 1;
+					
+			2'b11: if((input_pixel4 >= input_pixel0) && (input_pixel4 >= input_pixel8))
+						is_max = 1;
+		endcase
+		
+		if(is_max)
+			temp_result = input_pixel4;
+		else
+			temp_result = 0;
+	end
+	
+endmodule

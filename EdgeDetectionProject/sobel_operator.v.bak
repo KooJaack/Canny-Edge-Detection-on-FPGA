@@ -1,0 +1,45 @@
+module sobel_operator (
+	input [7:0] in_pix0,
+	input [7:0] in_pix1,
+	input [7:0] in_pix2,
+	input [7:0] in_pix3,
+	input [7:0] in_pix5,
+	input [7:0] in_pix6,
+	input [7:0] in_pix7,
+	input [7:0] in_pix8,
+	output [7:0] out_pixel,
+	output [7:0] out_angle);
+
+	
+	localparam MAX_VALUE = 255;
+	
+	reg [7:0] angle;
+	wire signed[10:0] gx, gy;
+	wire [10:0] abs_gy, abs_gx, temp_out;
+	wire is_negative;
+
+	assign gx = (in_pix2 - in_pix0) + (in_pix5 - in_pix3)*2 + (in_pix8 - in_pix6);
+	assign gy = (in_pix0 - in_pix6) + (in_pix1 - in_pix7)*2 + (in_pix2 - in_pix8);
+	
+	assign abs_gy = gy[10] ? -gy : gy;
+	assign abs_gx = gx[10] ? -gx : gx;
+	assign is_negative =	gx[10] || gy[10];
+	
+	assign temp_out = (abs_gy + abs_gx) >> 1;
+	assign out_pixel = temp_out > MAX_VALUE ? MAX_VALUE : temp_out[7:0];
+	assign out_angle = angle;
+	
+	always @ (*) begin
+		if (((abs_gy << 1) + (abs_gy >> 1)) <= abs_gx) 
+			angle = 0; // 0 degrees 
+		else if (abs_gy <= (abs_gx << 1) + (abs_gx >> 1))
+		begin
+			if (is_negative)
+			  angle = 3; // 135 degrees
+			else angle = 1; // 45 degrees
+		 end
+		 else
+			angle = 2; // 90 degrees
+  end
+  
+endmodule

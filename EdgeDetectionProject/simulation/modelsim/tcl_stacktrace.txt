@@ -1,0 +1,37 @@
+Fri Feb 28 15:59:05 CET 2020
+Trace back: invalid command name ""
+    while executing
+"{} idsToReferencePaths 1 {}"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 [lrange $args 0 end-1] [lindex $args end]"
+    (procedure "applyToList" line 2)
+    invoked from within
+"applyToList $treeView idsToReferencePaths $useIds $top $expanded"
+    (procedure "_resetTree" line 29)
+    invoked from within
+"_resetTree $w"
+    (procedure "sort" line 6)
+    invoked from within
+"sort $w $col $dir"
+    (procedure "structsort" line 9)
+    invoked from within
+"structsort .main_pane.structure 0 ascending"
+    (in namespace inscope "::QStructure" script line 1)
+    invoked from within
+"namespace inscope ::QStructure {structsort .main_pane.structure} 0 ascending"
+    ("eval" body line 1)
+    invoked from within
+"eval $itk_option(-sortcommand) $column $dir"
+    (object "::.main_pane.structure.interior.cs.body.struct" method "::vsimwidgets::Hierarchy::sort" body line 26)
+    invoked from within
+"sort $sortIdx $dir"
+    (object "::.main_pane.structure.interior.cs.body.struct" method "::vsimwidgets::Hierarchy::_initializeSortColumn" body line 10)
+    invoked from within
+"::.main_pane.structure.interior.cs.body.struct _initializeSortColumn"
+    (in namespace inscope "::vsimwidgets::Hierarchy" script line 1)
+    invoked from within
+"namespace inscope ::vsimwidgets::Hierarchy {::.main_pane.structure.interior.cs.body.struct _initializeSortColumn}"
+    ("after" script)
+  <2:E:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/tk8.5/bgerror.tcl:92: ::tkerror {invalid command name ""}
+  <1:eval:1: ::tk::dialog::error::bgerror {invalid command name ""}

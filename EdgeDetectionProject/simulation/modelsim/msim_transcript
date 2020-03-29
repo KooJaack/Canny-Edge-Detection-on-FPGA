@@ -1,0 +1,221 @@
+# Reading E:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# ERROR: No extended dataflow license exists
+# do EdgeDetection_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying E:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject {E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/edge_detection.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:28:25 on Mar 29,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject" E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/edge_detection.v 
+# -- Compiling module edge_detection
+# 
+# Top level modules:
+# 	edge_detection
+# End time: 20:28:25 on Mar 29,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject {E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buffer_gauss_to_sobel.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:28:25 on Mar 29,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject" E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buffer_gauss_to_sobel.v 
+# -- Compiling module buf_gauss_to_sobel
+# 
+# Top level modules:
+# 	buf_gauss_to_sobel
+# End time: 20:28:25 on Mar 29,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject {E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buffer_sobel_to_nonmaxsupression.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:28:25 on Mar 29,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject" E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buffer_sobel_to_nonmaxsupression.v 
+# -- Compiling module buf_sobel_to_threshold
+# 
+# Top level modules:
+# 	buf_sobel_to_threshold
+# End time: 20:28:25 on Mar 29,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject {E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/fifo_memory504.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:28:26 on Mar 29,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject" E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/fifo_memory504.v 
+# -- Compiling module fifo_memory504
+# 
+# Top level modules:
+# 	fifo_memory504
+# End time: 20:28:26 on Mar 29,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject {E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/fifo_memory502.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:28:26 on Mar 29,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject" E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/fifo_memory502.v 
+# -- Compiling module fifo_memory502
+# 
+# Top level modules:
+# 	fifo_memory502
+# End time: 20:28:26 on Mar 29,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject {E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/non_max_suppression.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:28:26 on Mar 29,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject" E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/non_max_suppression.v 
+# -- Compiling module n_max_suppression
+# 
+# Top level modules:
+# 	n_max_suppression
+# End time: 20:28:26 on Mar 29,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject {E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/thresholding.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:28:26 on Mar 29,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject" E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/thresholding.v 
+# -- Compiling module threshold
+# 
+# Top level modules:
+# 	threshold
+# End time: 20:28:26 on Mar 29,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject {E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/sobel_operator.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:28:26 on Mar 29,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject" E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/sobel_operator.v 
+# -- Compiling module sobel_operator
+# 
+# Top level modules:
+# 	sobel_operator
+# End time: 20:28:26 on Mar 29,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject {E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:28:26 on Mar 29,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject" E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v 
+# -- Compiling module buf_to_gauss
+# 
+# Top level modules:
+# 	buf_to_gauss
+# End time: 20:28:26 on Mar 29,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject {E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/fifo_memory506.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:28:26 on Mar 29,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject" E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/fifo_memory506.v 
+# -- Compiling module fifo_memory506
+# 
+# Top level modules:
+# 	fifo_memory506
+# End time: 20:28:26 on Mar 29,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject {E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/rgb_to_grayscale.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:28:26 on Mar 29,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject" E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/rgb_to_grayscale.v 
+# -- Compiling module rgb_to_grayscale
+# 
+# Top level modules:
+# 	rgb_to_grayscale
+# End time: 20:28:26 on Mar 29,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject {E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/gauss_filter.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:28:26 on Mar 29,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject" E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/gauss_filter.sv 
+# -- Compiling module gauss_filter
+# 
+# Top level modules:
+# 	gauss_filter
+# End time: 20:28:26 on Mar 29,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject {E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/tb_buffer_and_gauss2.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:28:26 on Mar 29,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject" E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/tb_buffer_and_gauss2.v 
+# -- Compiling module tb_buffer_and_gauss2
+# 
+# Top level modules:
+# 	tb_buffer_and_gauss2
+# End time: 20:28:26 on Mar 29,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs="+acc"  tb_buffer_and_gauss2
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneiv_hssi_ver -L cycloneiv_pcie_hip_ver -L cycloneiv_ver -L rtl_work -L work -voptargs=""+acc"" tb_buffer_and_gauss2 
+# Start time: 20:28:26 on Mar 29,2020
+# Loading work.tb_buffer_and_gauss2
+# Loading work.buf_to_gauss
+# Loading work.fifo_memory506
+# Loading altera_mf_ver.scfifo
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# ** Warning: (vsim-3015) E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/tb_buffer_and_gauss2.v(29): [PCDPC] - Port size (10) does not match connection size (8) for port 'serial_in'. The port definition is at: E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v(6).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_buffer_and_gauss2/gauss_buffer File: E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v
+# ** Warning: (vsim-3015) E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/tb_buffer_and_gauss2.v(29): [PCDPC] - Port size (10) does not match connection size (8) for port 'out0'. The port definition is at: E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v(7).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_buffer_and_gauss2/gauss_buffer File: E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v
+# ** Warning: (vsim-3015) E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/tb_buffer_and_gauss2.v(29): [PCDPC] - Port size (10) does not match connection size (8) for port 'out1'. The port definition is at: E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v(8).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_buffer_and_gauss2/gauss_buffer File: E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v
+# ** Warning: (vsim-3015) E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/tb_buffer_and_gauss2.v(29): [PCDPC] - Port size (10) does not match connection size (8) for port 'out2'. The port definition is at: E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_buffer_and_gauss2/gauss_buffer File: E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v
+# ** Warning: (vsim-3015) E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/tb_buffer_and_gauss2.v(29): [PCDPC] - Port size (10) does not match connection size (8) for port 'out3'. The port definition is at: E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v(10).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_buffer_and_gauss2/gauss_buffer File: E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v
+# ** Warning: (vsim-3015) E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/tb_buffer_and_gauss2.v(29): [PCDPC] - Port size (10) does not match connection size (8) for port 'out4'. The port definition is at: E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v(11).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_buffer_and_gauss2/gauss_buffer File: E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v
+# ** Warning: (vsim-3015) E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/tb_buffer_and_gauss2.v(29): [PCDPC] - Port size (10) does not match connection size (8) for port 'out5'. The port definition is at: E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v(12).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_buffer_and_gauss2/gauss_buffer File: E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v
+# ** Warning: (vsim-3015) E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/tb_buffer_and_gauss2.v(29): [PCDPC] - Port size (10) does not match connection size (8) for port 'out6'. The port definition is at: E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v(13).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_buffer_and_gauss2/gauss_buffer File: E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v
+# ** Warning: (vsim-3015) E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/tb_buffer_and_gauss2.v(29): [PCDPC] - Port size (10) does not match connection size (8) for port 'out7'. The port definition is at: E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v(14).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_buffer_and_gauss2/gauss_buffer File: E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v
+# ** Warning: (vsim-3015) E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/tb_buffer_and_gauss2.v(29): [PCDPC] - Port size (10) does not match connection size (8) for port 'out8'. The port definition is at: E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v(15).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_buffer_and_gauss2/gauss_buffer File: E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v
+# ** Warning: (vsim-3015) E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/tb_buffer_and_gauss2.v(29): [PCDPC] - Port size (10) does not match connection size (8) for port 'out9'. The port definition is at: E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v(16).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_buffer_and_gauss2/gauss_buffer File: E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v
+# ** Warning: (vsim-3015) E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/tb_buffer_and_gauss2.v(29): [PCDPC] - Port size (10) does not match connection size (8) for port 'out10'. The port definition is at: E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v(17).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_buffer_and_gauss2/gauss_buffer File: E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v
+# ** Warning: (vsim-3015) E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/tb_buffer_and_gauss2.v(29): [PCDPC] - Port size (10) does not match connection size (8) for port 'out11'. The port definition is at: E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v(18).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_buffer_and_gauss2/gauss_buffer File: E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v
+# ** Warning: (vsim-3015) E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/tb_buffer_and_gauss2.v(29): [PCDPC] - Port size (10) does not match connection size (8) for port 'out12'. The port definition is at: E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v(19).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_buffer_and_gauss2/gauss_buffer File: E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v
+# ** Warning: (vsim-3015) E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/tb_buffer_and_gauss2.v(29): [PCDPC] - Port size (10) does not match connection size (8) for port 'out13'. The port definition is at: E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v(20).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_buffer_and_gauss2/gauss_buffer File: E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v
+# ** Warning: (vsim-3015) E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/tb_buffer_and_gauss2.v(29): [PCDPC] - Port size (10) does not match connection size (8) for port 'out14'. The port definition is at: E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v(21).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_buffer_and_gauss2/gauss_buffer File: E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v
+# ** Warning: (vsim-3015) E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/tb_buffer_and_gauss2.v(29): [PCDPC] - Port size (10) does not match connection size (8) for port 'out15'. The port definition is at: E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v(22).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_buffer_and_gauss2/gauss_buffer File: E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v
+# ** Warning: (vsim-3015) E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/tb_buffer_and_gauss2.v(29): [PCDPC] - Port size (10) does not match connection size (8) for port 'out16'. The port definition is at: E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v(23).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_buffer_and_gauss2/gauss_buffer File: E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v
+# ** Warning: (vsim-3015) E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/tb_buffer_and_gauss2.v(29): [PCDPC] - Port size (10) does not match connection size (8) for port 'out17'. The port definition is at: E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v(24).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_buffer_and_gauss2/gauss_buffer File: E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v
+# ** Warning: (vsim-3015) E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/tb_buffer_and_gauss2.v(29): [PCDPC] - Port size (10) does not match connection size (8) for port 'out18'. The port definition is at: E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v(25).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_buffer_and_gauss2/gauss_buffer File: E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v
+# ** Warning: (vsim-3015) E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/tb_buffer_and_gauss2.v(29): [PCDPC] - Port size (10) does not match connection size (8) for port 'out19'. The port definition is at: E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v(26).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_buffer_and_gauss2/gauss_buffer File: E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v
+# ** Warning: (vsim-3015) E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/tb_buffer_and_gauss2.v(29): [PCDPC] - Port size (10) does not match connection size (8) for port 'out20'. The port definition is at: E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v(27).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_buffer_and_gauss2/gauss_buffer File: E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v
+# ** Warning: (vsim-3015) E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/tb_buffer_and_gauss2.v(29): [PCDPC] - Port size (10) does not match connection size (8) for port 'out21'. The port definition is at: E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v(28).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_buffer_and_gauss2/gauss_buffer File: E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v
+# ** Warning: (vsim-3015) E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/tb_buffer_and_gauss2.v(29): [PCDPC] - Port size (10) does not match connection size (8) for port 'out22'. The port definition is at: E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v(29).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_buffer_and_gauss2/gauss_buffer File: E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v
+# ** Warning: (vsim-3015) E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/tb_buffer_and_gauss2.v(29): [PCDPC] - Port size (10) does not match connection size (8) for port 'out23'. The port definition is at: E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v(30).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_buffer_and_gauss2/gauss_buffer File: E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v
+# ** Warning: (vsim-3015) E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/tb_buffer_and_gauss2.v(29): [PCDPC] - Port size (10) does not match connection size (8) for port 'out24'. The port definition is at: E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v(31).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_buffer_and_gauss2/gauss_buffer File: E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/buf_to_gauss.v
+# 
+# add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: jacek  Hostname: DESKTOP-6V9GJ79  ProcessID: 11768
+#           Attempting to use alternate WLF file "./wlft97bzdd".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft97bzdd
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Break key hit
+# Break in Module tb_buffer_and_gauss2 at E:/intelFPGA_lite/18.1/Projects/EdgeDetectionProject/tb_buffer_and_gauss2.v line 62
+# End time: 20:29:47 on Mar 29,2020, Elapsed time: 0:01:21
+# Errors: 0, Warnings: 28

@@ -1,0 +1,172 @@
+Flow report for EdgeDetection
+Sun Mar 29 20:53:40 2020
+Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Successful - Sun Mar 29 20:53:40 2020       ;
+; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
+; Revision Name                      ; EdgeDetection                               ;
+; Top-level Entity Name              ; edge_detection                              ;
+; Family                             ; Cyclone IV GX                               ;
+; Device                             ; EP4CGX150DF31I7AD                           ;
+; Timing Models                      ; Final                                       ;
+; Total logic elements               ; 2,191 / 149,760 ( 1 % )                     ;
+;     Total combinational functions  ; 2,060 / 149,760 ( 1 % )                     ;
+;     Dedicated logic registers      ; 814 / 149,760 ( < 1 % )                     ;
+; Total registers                    ; 814                                         ;
+; Total pins                         ; 29 / 508 ( 6 % )                            ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 36,864 / 6,635,520 ( < 1 % )                ;
+; Embedded Multiplier 9-bit elements ; 0 / 720 ( 0 % )                             ;
+; Total GXB Receiver Channel PCS     ; 0 / 8 ( 0 % )                               ;
+; Total GXB Receiver Channel PMA     ; 0 / 8 ( 0 % )                               ;
+; Total GXB Transmitter Channel PCS  ; 0 / 8 ( 0 % )                               ;
+; Total GXB Transmitter Channel PMA  ; 0 / 8 ( 0 % )                               ;
+; Total PLLs                         ; 0 / 8 ( 0 % )                               ;
++------------------------------------+---------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 03/29/2020 20:52:39 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; EdgeDetection       ;
++-------------------+---------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                     ;
++--------------------------------------+----------------------------------------+---------------+----------------+-------------------------------------+
+; Assignment Name                      ; Value                                  ; Default Value ; Entity Name    ; Section Id                          ;
++--------------------------------------+----------------------------------------+---------------+----------------+-------------------------------------+
+; COMPILER_SIGNATURE_ID                ; 53447175044680.158550795817816         ; --            ; --             ; --                                  ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --             ; tb_buffer_and_gauss2                ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --             ; tb_gauss_and_sobel                  ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --             ; tb_edge_detection                   ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --             ; tb_buffer_and_nonmax_with_threshold ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --             ; tb_gray                             ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --             ; tb_buffer_and_sobel                 ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --             ; tb_gray_image                       ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --             ; tb_buffer_and_gauss                 ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; tb_buffer_and_gauss2                   ; --            ; --             ; eda_simulation                      ;
+; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --             ; eda_simulation                      ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)              ; <None>        ; --             ; --                                  ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --             ; eda_simulation                      ;
+; EDA_TEST_BENCH_FILE                  ; tb_buffer_and_gauss2.v                 ; --            ; --             ; tb_buffer_and_gauss2                ;
+; EDA_TEST_BENCH_FILE                  ; tb_gauss_and_sobel.v                   ; --            ; --             ; tb_gauss_and_sobel                  ;
+; EDA_TEST_BENCH_FILE                  ; tb_edge_detection.v                    ; --            ; --             ; tb_edge_detection                   ;
+; EDA_TEST_BENCH_FILE                  ; tb_buffer_and_nonmax_with_threshold.v  ; --            ; --             ; tb_buffer_and_nonmax_with_threshold ;
+; EDA_TEST_BENCH_FILE                  ; tb_gray.v                              ; --            ; --             ; tb_gray                             ;
+; EDA_TEST_BENCH_FILE                  ; tb_buffer_and_sobel.v                  ; --            ; --             ; tb_buffer_and_sobel                 ;
+; EDA_TEST_BENCH_FILE                  ; tb_gray_image.v                        ; --            ; --             ; tb_gray_image                       ;
+; EDA_TEST_BENCH_FILE                  ; tb_buffer_and_gauss.v                  ; --            ; --             ; tb_buffer_and_gauss                 ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_buffer_and_gauss2                   ; --            ; --             ; tb_buffer_and_gauss2                ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_gauss_and_sobel                     ; --            ; --             ; tb_gauss_and_sobel                  ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_edge_detection                      ; --            ; --             ; tb_edge_detection                   ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_buffer_and_nonmax_with_threshold    ; --            ; --             ; tb_buffer_and_nonmax_with_threshold ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_gray                                ; --            ; --             ; tb_gray                             ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_buffer_and_sobel                    ; --            ; --             ; tb_buffer_and_sobel                 ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_gray_image                          ; --            ; --             ; tb_gray_image                       ;
+; EDA_TEST_BENCH_MODULE_NAME           ; tb_buffer_and_gauss                    ; --            ; --             ; tb_buffer_and_gauss                 ;
+; EDA_TEST_BENCH_NAME                  ; tb_edge_detection                      ; --            ; --             ; eda_simulation                      ;
+; EDA_TEST_BENCH_NAME                  ; tb_buffer_and_gauss                    ; --            ; --             ; eda_simulation                      ;
+; EDA_TEST_BENCH_NAME                  ; tb_buffer_and_sobel                    ; --            ; --             ; eda_simulation                      ;
+; EDA_TEST_BENCH_NAME                  ; tb_gauss_and_sobel                     ; --            ; --             ; eda_simulation                      ;
+; EDA_TEST_BENCH_NAME                  ; tb_buffer_and_nonmax_with_threshold    ; --            ; --             ; eda_simulation                      ;
+; EDA_TEST_BENCH_NAME                  ; tb_gray                                ; --            ; --             ; eda_simulation                      ;
+; EDA_TEST_BENCH_NAME                  ; tb_gray_image                          ; --            ; --             ; eda_simulation                      ;
+; EDA_TEST_BENCH_NAME                  ; tb_buffer_and_gauss2                   ; --            ; --             ; eda_simulation                      ;
+; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --             ; eda_simulation                      ;
+; MAX_CORE_JUNCTION_TEMP               ; 100                                    ; --            ; --             ; --                                  ;
+; MIN_CORE_JUNCTION_TEMP               ; -40                                    ; --            ; --             ; --                                  ;
+; MISC_FILE                            ; fifo_memory504_bb.v                    ; --            ; --             ; --                                  ;
+; MISC_FILE                            ; fifo_memory502_bb.v                    ; --            ; --             ; --                                  ;
+; NOMINAL_CORE_SUPPLY_VOLTAGE          ; 1.2V                                   ; --            ; --             ; --                                  ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; edge_detection ; Top                                 ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; edge_detection ; Top                                 ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; edge_detection ; Top                                 ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --            ; --             ; --                                  ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --             ; --                                  ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --            ; --             ; --                                  ;
+; TOP_LEVEL_ENTITY                     ; edge_detection                         ; EdgeDetection ; --             ; --                                  ;
++--------------------------------------+----------------------------------------+---------------+----------------+-------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                        ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis ; 00:00:16     ; 1.0                     ; 4919 MB             ; 00:00:28                           ;
+; Fitter               ; 00:00:30     ; 1.1                     ; 6396 MB             ; 00:01:17                           ;
+; Assembler            ; 00:00:04     ; 1.0                     ; 4755 MB             ; 00:00:04                           ;
+; Timing Analyzer      ; 00:00:03     ; 1.4                     ; 4966 MB             ; 00:00:03                           ;
+; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 4738 MB             ; 00:00:03                           ;
+; Total                ; 00:00:56     ; --                      ; --                  ; 00:01:55                           ;
++----------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                    ;
++----------------------+------------------+------------+------------+----------------+
+; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++----------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis ; DESKTOP-6V9GJ79  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-6V9GJ79  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-6V9GJ79  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DESKTOP-6V9GJ79  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-6V9GJ79  ; Windows 10 ; 10.0       ; x86_64         ;
++----------------------+------------------+------------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off EdgeDetection -c EdgeDetection
+quartus_fit --read_settings_files=off --write_settings_files=off EdgeDetection -c EdgeDetection
+quartus_asm --read_settings_files=off --write_settings_files=off EdgeDetection -c EdgeDetection
+quartus_sta EdgeDetection -c EdgeDetection
+quartus_eda --read_settings_files=off --write_settings_files=off EdgeDetection -c EdgeDetection
+
+
+
